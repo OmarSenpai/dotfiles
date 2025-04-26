@@ -1,4 +1,4 @@
-## dotfiles:
+# dotfiles:
 
 config files for everything I use.
 
