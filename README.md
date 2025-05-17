@@ -7,13 +7,7 @@ config files for everything I use.
 
 ### My Configs:
 
-**OS**: [`Fedora`](https://fedoraproject.org/)
-**Terminal(s)**: bash + zsh
-**Code Editor(s)**: [`zed`](zed.dev)
-**System fetch**: [`fastfetch`](https://github.com/fastfetch-cli/fastfetch)
-**System monitor**: [`bpytop`](https://github.com/aristocratos/bpytop)
-**Icon theme**: [`MoreWaita`](https://github.com/somepaulo/MoreWaita)
-Wallpapers: [`Collection`](Wallpapers/)
+**OS**: [`Fedora`](https://fedoraproject.org/)<br>**Terminal(s)**: bash + zsh<br>**Code Editor(s)**: [`zed`](zed.dev)<br>**System fetch**: [`fastfetch`](https://github.com/fastfetch-cli/fastfetch)<br>**System monitor**: [`bpytop`](https://github.com/aristocratos/bpytop)<br>**Icon theme**: [`MoreWaita`](https://github.com/somepaulo/MoreWaita)<br>**Wallpapers**: [`Collection`](Wallpapers/)
 
 ### Fonts: 
 - [`JetBrains Mono`](https://www.jetbrains.com/lp/mono/)
