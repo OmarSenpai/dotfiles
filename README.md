@@ -13,3 +13,19 @@ config files for everything I use.
 - [`Geist`](Assets/fonts)
 - [`JetBrains Sans`](Assets/fonts)
 - [`GeistMono`](https://fonts.google.com/specimen/Geist+Mono)
+
+<br>
+
+## Setup
+:warning: **Note**: This configuration was made for my Laptop (Fedora distro specifically), so some things might not work on yours, in that case, please try if you can fix that up as much as possible
+
+### Installation:
+Clone the repo:
+````
+git clone https://github.com/OmarSenpai/dotfiles
+````
+
+Run the script:
+````
+./install.sh
+````
