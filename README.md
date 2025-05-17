@@ -1,5 +1,4 @@
 # Senpai's dotfiles:
-________________________________________
 
 config files for everything I use.
 
