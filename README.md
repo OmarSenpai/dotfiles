@@ -12,4 +12,4 @@ config files for everything I use.
 - [`JetBrains Mono`](https://www.jetbrains.com/lp/mono/)
 - [`Geist`](Assets/fonts)
 - [`JetBrains Sans`](Assets/fonts)
-* [`GeistMono`](https://fonts.google.com/specimen/Geist+Mono)
+- [`GeistMono`](https://fonts.google.com/specimen/Geist+Mono)
