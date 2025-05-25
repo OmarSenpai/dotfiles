@@ -3,7 +3,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%232f2f2f&color=%2310b0b3)
 ![GitHub repo size](https://img.shields.io/github/repo-size/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%233f3f3f&color=%234ca457)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=github.com%2FOmarSenpai%2Fdotfiles&label=views&labelColor=%231f1f1f&countColor=%23dce775)
-[![license](https://img.shields.io/github/license/OmarSenpai/dotfiles?color=FCA2AA&labelColor=1A1B26&style=for-the-badge)](https://github.com/OmarSenpai/dotfiles/blob/main/LICENSE.md)
 
 </div>
 
@@ -35,7 +34,6 @@ config files for everything I use.
 - [`Clipboard Indicator`](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 - [`Dash to Dock`](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [`Forge`](https://extensions.gnome.org/extension/4481/forge/)
-- [`Freon`](https://extensions.gnome.org/extension/841/freon/)
 - [`Media Controls`](https://extensions.gnome.org/extension/4470/media-controls/)
 - [`Open Bar`](https://extensions.gnome.org/extension/6580/open-bar/)
 - [`Removable Drive Menu`](https://extensions.gnome.org/extension/7/removable-drive-menu/)
@@ -55,7 +53,6 @@ config files for everything I use.
 Clone the repo & run the script:
 ````
 git clone https://github.com/OmarSenpai/dotfiles
-````
 ./install.sh
 ````
 
