@@ -38,7 +38,7 @@ config files for everything I use.
 - [`Freon`](https://extensions.gnome.org/extension/841/freon/)
 - [`Media Controls`](https://extensions.gnome.org/extension/4470/media-controls/)
 - [`Open Bar`](https://extensions.gnome.org/extension/6580/open-bar/)
-- [`RemovablDrive Menu`](https://extensions.gnome.org/extension/7/removable-drive-menu/)
+- [`Removable Drive Menu`](https://extensions.gnome.org/extension/7/removable-drive-menu/)
 - [`Space Bar`](https://extensions.gnome.org/extension/5090/space-bar/)
 - [`System Monitor`](https://extensions.gnome.org/extension/6807/system-monitor/)
 - [`Tiling Assistant`](https://extensions.gnome.org/extension/3733/tiling-assistant/)
