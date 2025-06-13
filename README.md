@@ -15,8 +15,8 @@ config files for everything I use.
 ### My Configs:
 
 **OS**: [`Fedora`](https://fedoraproject.org/)<br>
-**Terminal(s)**: bash + zsh<br>
-**Custom terminal prompt**: starship<br>
+**Shell(s)**: bash + zsh<br>
+**Custom terminal prompt**: [`starship`](starship.rs)<br>
 **Code Editor(s)**: [`zed`](zed.dev)<br>
 **System fetch**: [`fastfetch`](https://github.com/fastfetch-cli/fastfetch)<br>
 **System monitor**: [`bpytop`](https://github.com/aristocratos/bpytop)<br>
@@ -35,7 +35,6 @@ config files for everything I use.
 - [`Clipboard Indicator`](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 - [`Dash to Dock`](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [`Forge`](https://extensions.gnome.org/extension/4481/forge/)
-- [`Freon`](https://extensions.gnome.org/extension/841/freon/)
 - [`Media Controls`](https://extensions.gnome.org/extension/4470/media-controls/)
 - [`Open Bar`](https://extensions.gnome.org/extension/6580/open-bar/)
 - [`Removable Drive Menu`](https://extensions.gnome.org/extension/7/removable-drive-menu/)
