@@ -1,9 +1,8 @@
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%232f2f2f&color=%2310b0b3)
-![GitHub repo size](https://img.shields.io/github/repo-size/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%233f3f3f&color=%234ca457)
-![Visitors](https://api.visitorbadge.io/api/visitors?path=github.com%2FOmarSenpai%2Fdotfiles&label=views&labelColor=%231f1f1f&countColor=%23dce775)
-[![license](https://img.shields.io/github/license/OmarSenpai/dotfiles?color=FCA2AA&labelColor=1A1B26&style=for-the-badge)](https://github.com/OmarSenpai/dotfiles/blob/main/LICENSE.md)
+![GitHub Repo stars](https://img.shields.io/github/stars/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%23272727&color=%23ae37fd)
+![GitHub repo size](https://img.shields.io/github/repo-size/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%23272727&color=%23ae37fd)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=github.com%2FOmarSenpai%2Fdotfiles&label=views&labelColor=%23272727&countColor=%23ae37fd)
 
 </div>
 
@@ -17,6 +16,7 @@ config files for everything I use.
 
 **OS**: [`Fedora`](https://fedoraproject.org/)<br>
 **Terminal(s)**: bash + zsh<br>
+**Custom terminal prompt**: starship<br>
 **Code Editor(s)**: [`zed`](zed.dev)<br>
 **System fetch**: [`fastfetch`](https://github.com/fastfetch-cli/fastfetch)<br>
 **System monitor**: [`bpytop`](https://github.com/aristocratos/bpytop)<br>
@@ -38,7 +38,7 @@ config files for everything I use.
 - [`Freon`](https://extensions.gnome.org/extension/841/freon/)
 - [`Media Controls`](https://extensions.gnome.org/extension/4470/media-controls/)
 - [`Open Bar`](https://extensions.gnome.org/extension/6580/open-bar/)
-- [`RemovablDrive Menu`](https://extensions.gnome.org/extension/7/removable-drive-menu/)
+- [`Removable Drive Menu`](https://extensions.gnome.org/extension/7/removable-drive-menu/)
 - [`Space Bar`](https://extensions.gnome.org/extension/5090/space-bar/)
 - [`System Monitor`](https://extensions.gnome.org/extension/6807/system-monitor/)
 - [`Tiling Assistant`](https://extensions.gnome.org/extension/3733/tiling-assistant/)
@@ -55,7 +55,6 @@ config files for everything I use.
 Clone the repo & run the script:
 ````
 git clone https://github.com/OmarSenpai/dotfiles
-````
 ./install.sh
 ````
 
