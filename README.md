@@ -17,7 +17,7 @@ config files for everything I use.
 **OS**: [`Fedora`](https://fedoraproject.org/)<br>
 **Shell(s)**: bash + zsh<br>
 **Custom terminal prompt**: [`starship`](starship.rs)<br>
-**Code Editor(s)**: [`zed`](zed.dev)<br>
+**Code Editor(s)**: [`zed`](zed.dev) + [`neovim`](neovim.io)<br>
 **System fetch**: [`fastfetch`](https://github.com/fastfetch-cli/fastfetch)<br>
 **System monitor**: [`bpytop`](https://github.com/aristocratos/bpytop)<br>
 **Icon theme**: [`MoreWaita`](https://github.com/somepaulo/MoreWaita)<br>
