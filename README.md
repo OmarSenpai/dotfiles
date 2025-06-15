@@ -1,8 +1,9 @@
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%232f2f2f&color=%2310b0b3)
-![GitHub repo size](https://img.shields.io/github/repo-size/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%233f3f3f&color=%234ca457)
-![Visitors](https://api.visitorbadge.io/api/visitors?path=github.com%2FOmarSenpai%2Fdotfiles&label=views&labelColor=%231f1f1f&countColor=%23dce775)
+![GitHub Repo stars](https://img.shields.io/github/stars/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%23272727&color=%23ae37fd)
+![GitHub repo size](https://img.shields.io/github/repo-size/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%23272727&color=%23ae37fd)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=github.com%2FOmarSenpai%2Fdotfiles&label=views&labelColor=%23272727&countColor=%23ae37fd)
+
 
 </div>
 
@@ -15,8 +16,9 @@ config files for everything I use.
 ### My Configs:
 
 **OS**: [`Fedora`](https://fedoraproject.org/)<br>
-**Terminal(s)**: bash + zsh<br>
-**Code Editor(s)**: [`zed`](zed.dev)<br>
+**Shell(s)**: bash + zsh<br>
+**Custom terminal prompt**: [`starship`](starship.rs)<br>
+**Code Editor(s)**: [`zed`](zed.dev) + [`neovim`](neovim.io)<br>
 **System fetch**: [`fastfetch`](https://github.com/fastfetch-cli/fastfetch)<br>
 **System monitor**: [`bpytop`](https://github.com/aristocratos/bpytop)<br>
 **Icon theme**: [`MoreWaita`](https://github.com/somepaulo/MoreWaita)<br>
