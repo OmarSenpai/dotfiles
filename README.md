@@ -4,6 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/OmarSenpai/dotfiles?style=for-the-badge&labelColor=%23272727&color=%23ae37fd)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=github.com%2FOmarSenpai%2Fdotfiles&label=views&labelColor=%23272727&countColor=%23ae37fd)
 
+
 </div>
 
 # Senpai's dotfiles:
