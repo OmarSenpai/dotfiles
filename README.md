@@ -24,7 +24,7 @@ config files for everything I use.
 **Icon theme**: [`MoreWaita`](https://github.com/somepaulo/MoreWaita)<br>
 **Wallpapers**: [`Collection`](Wallpapers/)
 
-### Fonts: 
+### Fonts:
 - [`JetBrains Mono`](https://www.jetbrains.com/lp/mono/)
 - [`Geist`](Assets/fonts)
 - [`JetBrains Sans`](Assets/fonts)
@@ -45,7 +45,8 @@ config files for everything I use.
 - [`Top Bar Organizer`](https://extensions.gnome.org/extension/4356/top-bar-organizer/)
 - [`User Themes`](https://extensions.gnome.org/extension/19/user-themes/)
 - [`Weather O'Clock`](https://extensions.gnome.org/extension/5470/weather-oclock/)
-- [`Workspace Indicator`](https://extensions.gnome.org/extension/21/workspace-indicator/)
+- [`Vitals`](https://extensions.gnome.org/extension/1460/vitals/)
+
 
 
 ## Setup
@@ -57,4 +58,3 @@ Clone the repo & run the script:
 git clone https://github.com/OmarSenpai/dotfiles
 ./install.sh
 ````
-

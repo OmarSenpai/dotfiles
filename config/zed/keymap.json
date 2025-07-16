@@ -14,7 +14,8 @@
       "ctrl-shift-s": "workspace::SaveAs",
       "ctrl-y": "editor::Redo",
       "ctrl-k": "theme_selector::Toggle",
-      "ctrl-t": "icon_theme_selector::Toggle"
+      "ctrl-t": "icon_theme_selector::Toggle",
+      "ctrl-?": "workspace::ToggleRightDock"
     }
   },
   {

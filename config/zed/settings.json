@@ -7,21 +7,31 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Zed (Default)",
+  "agent": {
+    "single_file_review": true,
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    }
+  },
+
   "autosave": {
     "after_delay": {
       "milliseconds": 10000
     }
   },
+
+  "experimental.theme_overrides": {},
+
   "ui_font_size": 15.0,
   "ui_font_family": "GeistMono Nerd Font Mono",
   "ui_font_weight": 500,
   "buffer_font_size": 15.0,
-  "buffer_font_family": "GeistMono Nerd Font Mono",
-  "buffer_font_weight": 500,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_weight": 400,
   "theme": {
     "mode": "dark",
     "light": "Fleet Light",
-    "dark": "Fleet Dark"
+    "dark": "S9npai"
   }
 }
