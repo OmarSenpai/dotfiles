@@ -1,0 +1,31 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-s": "workspace::Save",
+      "ctrl-n": "workspace::NewFile",
+      "ctrl-shift-s": "workspace::SaveAs",
+      "ctrl-y": "editor::Redo",
+      "ctrl-k": "theme_selector::Toggle",
+      "ctrl-t": "icon_theme_selector::Toggle",
+      "ctrl-?": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-z": "editor::Undo",
+      "ctrl-y": "editor::Redo",
+      "alt-shift-o": "editor::OrganizeImports",
+      "ctrl-shift-t": "workspace::OpenInTerminal"
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  }
+]

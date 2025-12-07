@@ -1,0 +1,146 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "/home/omar/.config/fastfetch/logos/Reno Ichikawa K6 Manga Cover.png",
+    "width": 40,
+    "preserveAspectRatio": true,
+    "padding": {
+      "right": 4,
+      "left": 3,
+      "top": 3,
+    },
+  },
+  "general": {
+    "multithreading": true,
+  },
+  "display": {
+    "separator": "⇾   ",
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "format": "                                {6}{7}{8}",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "╭──────────────────────────────────────────────────────────────────────────────╮", // `\u001b` is `\033`, or `\e`
+    },
+    "break",
+    {
+      "key": "     OS           ",
+      "keyColor": "green",
+      "type": "os",
+    },
+    {
+      "key": "    󰌢 Machine      ",
+      "keyColor": "cyan",
+      "type": "host",
+    },
+    {
+      "key": "     Kernel       ",
+      "keyColor": "blue",
+      "type": "kernel",
+    },
+    {
+      "key": "    󰅐 Display      ",
+      "keyColor": "green",
+      "type": "display",
+    },
+    {
+      "key": "     Packages     ",
+      "keyColor": "cyan",
+      "type": "packages",
+    },
+    {
+      "key": "     WM           ",
+      "keyColor": "blue",
+      "type": "wm",
+    },
+    {
+      "key": "     DE           ",
+      "keyColor": "green",
+      "type": "de",
+    },
+    {
+      "key": "     Theme        ",
+      "keyColor": "cyan",
+      "type": "wmtheme",
+    },
+    {
+      "key": "     Shell        ",
+      "keyColor": "blue",
+      "type": "shell",
+    },
+    {
+      "key": "     Terminal     ",
+      "keyColor": "green",
+      "type": "terminal",
+    },
+    {
+      "key": "     Font         ",
+      "keyColor": "cyan",
+      "type": "terminalfont",
+    },
+    {
+      "key": "    󰻠 CPU          ",
+      "keyColor": "blue",
+      "type": "cpu",
+    },
+    {
+      "key": "    󰍛 GPU          ",
+      "keyColor": "green",
+      "type": "gpu",
+    },
+    {
+      "key": "    🖴 Disk         ",
+      "keyColor": "cyan",
+      "type": "disk",
+    },
+    {
+      "key": "    🖫 Swap         ",
+      "keyColor": "blue",
+      "type": "swap",
+    },
+    {
+      "key": "    󰑭 Memory       ",
+      "keyColor": "green",
+      "type": "memory",
+    },
+    {
+      "key": "     Wifi         ",
+      "keyColor": "cyan",
+      "type": "localip",
+    },
+    {
+      "key": "     UpTime       ",
+      "keyColor": "blue",
+      "type": "uptime",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "╰──────────────────────────────────────────────────────────────────────────────╯", // `\u001b` is `\033`, or `\e`
+    },
+    "break",
+    {
+      "type": "colors",
+      "paddingLeft": 34,
+      "symbol": "circle",
+      "block": {
+        "width": 10,
+      },
+    },
+  ],
+}
+
+/*
+╭  (top-left corner)
+╮  (top-right corner)
+╰  (bottom-left corner)
+╯  (bottom-right corner)
+─  (horizontal line)
+│  (vertical line)
+*/

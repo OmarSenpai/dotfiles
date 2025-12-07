@@ -1,0 +1,35 @@
+# Ignore everything by default
+/*
+
+# --- Allow main top-level folders you want to track
+!/.gitignore
+!/.config/
+!/MyCode/
+!/Pictures/
+!/README.md
+
+# --- Ignore the contents of MyCode and Pictures
+/MyCode/*
+/Pictures/*
+
+# --- Re-allow only the desired subfolders
+!/MyCode/Dots/
+!/Pictures/Wallpapers/
+
+# --- Allow all content inside those subfolders
+!/MyCode/Dots/**
+!/Pictures/Wallpapers/**
+
+# --- .config rules (your previous logic)
+/.config/*
+!/.config/hypr/
+!/.config/waybar/
+!/.config/waypaper/
+!/.config/wofi/
+!/.config/wlogout/
+!/.config/bpytop/
+!/.config/fastfetch/
+!/.config/nvim/
+!/.config/kitty/
+!/.config/zed/
+!/.config/starship.toml
