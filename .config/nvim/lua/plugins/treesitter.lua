@@ -71,7 +71,9 @@ return {
             auto_install = true,
             ignore_install = { "dockerfile" },
         },
-        config = function(_, opts) require("nvim-treesitter.configs").setup(opts) end,
+        config = function(_, opts)
+            require("nvim-treesitter").setup(opts)
+        end,
     },
     {
         "nvim-treesitter/nvim-treesitter-context",
