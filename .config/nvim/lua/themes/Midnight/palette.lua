@@ -14,7 +14,6 @@ return {
     fg4 = '#6e6e6e', -- Subtle UI elements
 
     -- Accent colors
-    purple = '#994fc4',
     light_purple = "#b281eb",
     black = "#121212",
     blue = '#467cd4',
@@ -26,11 +25,13 @@ return {
     dark_green = "#3b8f5b",
     red = '#f48771',
     pink = '#de52de',
+    noct = "#9787f5",
     gold = '#d4b359',
     gray = "#757575",
     light_gray = "#bbbbbb",
     light_mint = "#63d69e",
     beige = "#b5b874",
+    arch = '#9d87ed',
     Turqoise = "#6ad6e4",
     Seagull = "#7eb6e2",
     Azure = "#3962b8",

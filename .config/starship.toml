@@ -1,22 +1,19 @@
-# ~/.config/starship.toml 
+# Starship Configuration - Box Style with Gruvbox Ribbons
+# Place this file at: ~/.config/starship.toml
 
-# Global options (from `settings` block)
+"$schema" = 'https://starship.rs/config-schema.json'
 
-
-add_newline = true
-command_timeout = 2000
-
-# This is where the 'format' string goes, translated from `lib.concatStrings`
-# Each item in the `lib.concatStrings` list becomes a segment in the string.
-format = """\
-[ ◢](fg:#84aad9)\
+# Global format with box drawing and ribbons
+format = """
+[╭─ ](fb)[](fb)\
 $os\
-[](fg:#84aad9 bg:#5bc7b9)\
+$username\
+[](bg:noct fg:fb)\
 $directory\
-[](fg:#5bc7b9 bg:#4ba6b8)\
+[](fg:noct bg:aqua)\
 $git_branch\
 $git_status\
-[](fg:#4ba6b8 bg:#769ff0)\
+[](fg:aqua bg:blue)\
 $c\
 $cpp\
 $rust\
@@ -27,144 +24,205 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:#769ff0)\
-$line_break\
-$character\
-"""
-
-right_format = """\
-[](fg:#c48df2)\
+$scala\
+$julia\
+$ruby\
+$swift\
+$nodejs\
+[](fg:blue bg:bg3)\
+$docker_context\
+$conda\
+[](fg:bg3 bg:bg1)\
 $time\
-[◤](fg:#c48df2)\ 
-"""
+[](fg:bg1)
+[╰─](bold cyan)$character"""
 
-# Module Definitions (from nested blocks like `os = { ... }`)
+# Add a blank line between shell prompts
+add_newline = true
 
+# Gruvbox Dark Color Palette
+palette = 'gruvbox_dark'
+
+[palettes.gruvbox_dark]
+fg0 = '#fbf1c7'
+bg1 = '#3c3836'
+bg3 = '#665c54'
+clear = '#dfdfdf'
+blue = '#3960c4'
+fb = '#6fb1d6'
+aqua = '#63bfa8'
+green = '#98971a'
+orange = '#d65d0e'
+purple = '#b16286'
+noct = '#9f91ed'
+sky = '#25c6cc'
+red = '#cc241d'
+yellow = '#d79921'
+
+# OS Symbol
 [os]
 disabled = false
-style = "bg:#84aad9 fg:#101010"
+style = "bg:fb fg:fg:black"
 
 [os.symbols]
-NixOS = ""
-Fedora = " "
+Windows = "󰍲"
 Ubuntu = "󰕈"
-SUSE = ""
+SUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
 Macos = "󰀵"
-Manjaro = ""
+Manjaro = ""
 Linux = "󰌽"
 Gentoo = "󰣨"
-Alpine = ""
-Amazon = ""
-Android = ""
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
 Arch = "󰣇"
 Artix = "󰣇"
-CentOS = ""
+EndeavourOS = ""
+CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
 
+# Username
 [username]
 show_always = true
-style_user = "bg:#84aad9 fg:#101010"
-style_root = "bg:#5e81ac fg:#101010"
-format = "[ $user ]($style)"
+style_user = "bg:fb fg:fg:black"
+style_root = "bg:fb fg:fg:black"
+format = '[ $user ]($style)'
 
+# Directory
 [directory]
-style = "bg:#5bc7b9 fg:#101010"
+style = "fg:fg:black bg:noct"
 format = "[ $path ]($style)"
-use_os_path_sep = true
-truncate_to_repo = false
+truncation_length = 0
+#truncation_symbol = "…/"
 
 [directory.substitutions]
-Documents = "󰈙"
-Downloads = ""
-Music = "󰝚"
-Pictures = ""
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
 
+# Git Branch
 [git_branch]
-symbol = " "
-style = "bg:#a3aed2"
-format = "[ ( $symbol$branch(:$remote_branch) )](fg:#0f0f0f bg:#4ba6b8)"
+symbol = ""
+style = "bg:aqua"
+format = '[[ $symbol $branch ](fg:fg:black bg:aqua)]($style)'
 
-
+# Git Status
 [git_status]
-style = "bg:#a3aed2"
-format = "[ ( $all_status$ahead_behind )](fg:#0f0f0f bg:#4ba6b8)"
+style = "bg:aqua"
+format = '[[($all_status$ahead_behind )](fg:fg:black bg:aqua)]($style)'
 
-[nodejs]
-symbol = ""
-style = "bg:#a3be8c"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
-
+# Programming Languages
 [c]
 symbol = ""
-style = "bg:#a3be8c"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
 
 [cpp]
-disabled = false
 symbol = ""
-style = "bg:#72d0ed"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
 
 [rust]
-symbol = ""
-style = "bg:#72d0ed"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
+symbol = "󱘗"
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
 
 [php]
 symbol = ""
-style = "bg:#72d0ed"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
 
 [java]
-symbol = ""
-style = "bg:#72d0ed"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
 
 [kotlin]
-symbol = ""
-style = "bg:#72d0ed"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
+symbol = "󱈙"
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
 
 [haskell]
 symbol = ""
-style = "bg:#72d0ed"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
-
-[golang]
-symbol = "  "
-style = "bg:#69ccdb"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
 
 [python]
-symbol = ""
-style = "bg:#69ccdb"
-format = "[ $symbol ($version) ](fg:#101010 bg:#769ff0)"
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
 
+[scala]
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
+
+[julia]
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
+
+[zig]
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
+
+[ruby]
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
+
+[swift]
+symbol = "󰛥"
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:fg:clear bg:blue)]($style)'
+
+# Docker & Environments
 [docker_context]
-symbol = ""
-style = "bg:sapphire"
-format = '[[ $symbol( $context) ](fg:crust bg:#769ff0)]($style)'
+symbol = ""
+style = "bg:bg3"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:bg3)]($style)'
 
 [conda]
-symbol = "  "
-style = "fg:crust bg:sapphire"
-format = '[$symbol$environment ]($style)'
-ignore_base = false
+style = "bg:bg3"
+format = '[[ $symbol( $environment) ](fg:#83a598 bg:bg3)]($style)'
 
+# Time
 [time]
 disabled = false
-time_format = "%r"
-style = "bg:4b45cc"
-format = "[[  $time ](fg:#101010 bg:#c48df2)]($style)"
+time_format = "%R"
+style = "bg:bg1"
+format = '[[  $time ](fg:fg:clear bg:bg1)]($style)'
 
+# Line Break
 [line_break]
 disabled = false
 
+# Character (prompt symbol)
 [character]
 disabled = false
-success_symbol = "[>](bold fg:#18D661)"
-error_symbol = "[>](bold fg:#d62929)"
+success_symbol = '[❯](bold fg:aqua)'
+error_symbol = '[❯](bold fg:red)'
+vimcmd_symbol = '[](bold fg:green)'
+vimcmd_replace_one_symbol = '[](bold fg:purple)'
+vimcmd_replace_symbol = '[](bold fg:purple)'
+vimcmd_visual_symbol = '[](bold fg:yellow)'
 

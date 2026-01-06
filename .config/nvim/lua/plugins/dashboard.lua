@@ -16,8 +16,6 @@ return {
                 local content = f:read("*a")
                 io.close(f)
 
-                -- Split the content by newline to get a table of lines for the header
-                -- 'trimempty = true' removes any leading/trailing empty lines if the file has them.
                 return vim.split(content, "\n", { plain = true, trimempty = true })
             else
                 print("Error: Could not read logo file at: " .. filepath)
@@ -31,7 +29,7 @@ return {
 
         require('dashboard').setup({
             config = {
-
+                theme = 'doom',
                 header = custom_header,
 
                 center = {

@@ -3,9 +3,6 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-        -- CORRECTED: Use the official 'FileType' event for the list of languages.
-        -- This ensures the plugin loads when you open a recognized file,
-        -- which is the safest way to lazy-load Treesitter.
         event = "FileType",
         ft = {
             "astro", "bash", "c", "cpp", "cmake", "c_sharp", "css", "diff",
@@ -79,7 +76,6 @@ return {
     {
         "nvim-treesitter/nvim-treesitter-context",
         dependencies = { "nvim-treesitter/nvim-treesitter" },
-        -- CORRECTED: Using 'FileType' as it depends on core Treesitter being loaded for a file.
         event = "BufReadPre",
         opts = function()
             local ret = {

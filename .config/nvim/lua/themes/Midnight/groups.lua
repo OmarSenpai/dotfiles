@@ -31,32 +31,32 @@ M.setup = function()
         -- Syntax highlighting
         Comment = { fg = colors.gray, italic = true },
         Constant = { fg = colors.beige },
-        String = { fg = colors.green },
+        String = { fg = colors.orange },
         Character = { fg = colors.orange },
         Number = { fg = colors.beige },
         Boolean = { fg = colors.blue },
         Float = { fg = colors.gold },
         Identifier = { fg = colors.lightblue },
         Function = { fg = colors.yellow },
-        Statement = { fg = colors.purple },
+        Statement = { fg = colors.noct },
         Conditional = { fg = colors.lightblue },
-        Repeat = { fg = colors.purple },
-        Label = { fg = colors.purple },
+        Repeat = { fg = colors.light_purple },
+        Label = { fg = colors.noct },
         Operator = { fg = colors.fg0 },
-        Keyword = { fg = colors.purple },
-        Exception = { fg = colors.purple },
-        PreProc = { fg = colors.purple },
+        Keyword = { fg = colors.Amethyst },
+        Exception = { fg = colors.arch },
+        PreProc = { fg = colors.noct },
         Include = { fg = colors.lightblue },
         Define = { fg = colors.lightblue },
-        Macro = { fg = colors.purple },
-        PreCondit = { fg = colors.purple },
-        Type = { fg = colors.blue },
-        StorageClass = { fg = colors.purple },
-        Structure = { fg = colors.blue },
+        Macro = { fg = colors.noct },
+        PreCondit = { fg = colors.Amethyst },
+        Type = { fg = colors.Turqoise },
+        StorageClass = { fg = colors.light_purple },
+        Structure = { fg = colors.Havelock_blue },
         Typedef = { fg = colors.beige },
         Special = { fg = colors.lightblue },
         SpecialChar = { fg = colors.gold },
-        Tag = { fg = colors.blue },
+        Tag = { fg = colors.Havelock_blue },
         Delimiter = { fg = colors.fg0 },
         SpecialComment = { fg = colors.green },
         Debug = { fg = colors.red },
@@ -84,15 +84,15 @@ M.setup = function()
         ["@method.call"] = { fg = colors.yellow },
         ["@keyword"] = { fg = colors.lightblue },
         ["@keyword.function"] = { fg = colors.Havelock_blue },
-        ["@keyword.operator"] = { fg = colors.purple },
+        ["@keyword.operator"] = { fg = colors.noct },
         ["@keyword.return"] = { fg = colors.Turqoise },
         ["@keyword.import"] = { fg = colors.lightblue },
         ["@keyword.conditional"] = { fg = c.Turqoise },
         ["@keyword.repeat"] = { fg = c.Turqoise },
         ["@type"] = { fg = colors.fg0 },
         ["@type.builtin"] = { fg = colors.lightblue },
-        ["@namespace"] = { fg = colors.pink },
-        ["@parameter"] = { fg = colors.Turqoise },
+        ["@namespace"] = { fg = colors.arch },
+        ["@parameter"] = { fg = colors.Havelock_blue },
         ["@property"] = { fg = colors.lightblue },
         ["@constant"] = { fg = colors.beige },
         ["@constant.builtin"] = { fg = colors.pink },
@@ -107,8 +107,8 @@ M.setup = function()
         ["@constructor"] = { fg = colors.blue },
         ["@tag"] = { fg = colors.blue },
         ["@attribute"] = { fg = colors.lightblue },
-        ["@type.qualifier"] = { fg = colors.purple }, -- auto, const
-        ["@storageclass"] = { fg = colors.purple },   -- int, float, etc.
+        ["@type.qualifier"] = { fg = colors.light_purple }, -- auto, const
+        ["@storageclass"] = { fg = colors.noct },           -- int, float, etc.
 
         -- Git signs
         GitSignsAdd = { fg = colors.git_add },
@@ -143,15 +143,15 @@ M.setup = function()
 
         -- Dashboard
         DashboardHeader = { fg = c.Aquaforest },
-        DashboardCenter = { fg = c.purple },
+        DashboardCenter = { fg = c.noct },
         DashboardFooter = { fg = c.fg_muted, italic = true },
         DashboardShortCut = { fg = c.Aquaforest },
 
-        -- === CMP (Autocompletion) ===
-        CmpBorder = { fg = c.fg1, bg = c.pmenu },          -- Bright white border
-        CmpDocBorder = { fg = c.fg1, bg = c.bg2 },         -- Documentation border
+        -- CMP (Autocompletion)
+        CmpBorder = { fg = c.fg1, bg = c.fg1 },            -- Bright white border
+        CmpDocBorder = { fg = c.fg1, bg = c.fg1 },         -- Documentation border
         CmpDocNormal = { fg = c.fg1, bg = c.bg2 },         -- Documentation text
-        CmpNormal = { fg = c.fg1, bg = c.pmenu },          -- Menu background
+        CmpNormal = { fg = c.fg1, bg = c.fg1 },            -- Menu background
         CmpItemAbbrMatch = { fg = c.yellow, bold = true }, -- Matching text highlight
         CmpItemAbbrMatchFuzzy = { fg = c.yellow },         -- Fuzzy match
     }
