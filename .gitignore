@@ -32,4 +32,5 @@
 !/.config/nvim/
 !/.config/kitty/
 !/.config/zed/
+!/.config/quickshell
 !/.config/starship.toml

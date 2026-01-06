@@ -1,0 +1,264 @@
+@import "colors.css";
+
+/* reset all styles */
+* {
+    all: unset;
+    font-family:
+        SF Mono Nerd Font,
+        JetBrains Mono Nerd Font,
+        FiraCode Nerd Font,
+        sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    text-shadow: none;
+    background-color: transparent;
+    color: @antiflash;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+tooltip,
+menu,
+#workspaces,
+#clock,
+#mpris,
+#tray,
+#pulseaudio,
+#backlight,
+#bluetooth,
+#network,
+#battery,
+#custom-power,
+#cpu,
+#memory,
+#custom-launcher {
+    background: black;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin: 0 3px;
+}
+
+#custom-launcher,
+#custom-power {
+    min-width: 45px;
+    color: aqua;
+}
+
+menu menuitem {
+    padding: 8px;
+}
+
+.modules-right,
+.modules-center,
+.modules-left {
+    padding: 0 5px;
+    margin: 0 5px 3px;
+}
+
+/* LEFT MODULES */
+
+#workspaces {
+    padding: 0 8px 0 3px;
+    border-radius: 22px;
+    color: transparent;
+    background: black;
+    font-weight: bold;
+    opacity: 1;
+}
+#workspaces button {
+    background: transparent;
+    min-width: 30px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+#workspaces button.active {
+    opacity: 1;
+}
+#workspaces button.active box label {
+    color: @vista-blue;
+}
+
+#taskbar button {
+    padding: 3px 8px;
+    transition: all 0.3s ease-in-out;
+}
+#taskbar button.active {
+    background: alpha(@onyx, 0.6);
+}
+
+/* CENTER MODULES */
+
+#clock,
+#mpris {
+    padding: 0 15px;
+}
+
+#mpris.playing {
+    color: black;
+    background: radial-gradient(
+        circle,
+        @vista-blue,
+        @tropical-indigo,
+        @celeste
+    );
+    background-size: 200% 200%;
+    animation: gradient 25s linear infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#cpu {
+    min-width: 110px;
+    color: @celeste;
+}
+
+#memory {
+    min-width: 110px;
+    color: @celeste;
+}
+
+#tray {
+    padding: 0 8px;
+}
+#backlight {
+    padding: 0 8px;
+}
+
+#backlight {
+    color: #e2e2e2;
+    min-width: 50px;
+}
+
+#bluetooth {
+    color: @vista-blue;
+}
+#network {
+    color: @antiflash;
+}
+#bluetooth {
+    min-width: 40px;
+    padding: 0 10px;
+}
+#network {
+    min-width: 45px;
+    padding: 0 7px 0 2px;
+    margin: 0 2px;
+}
+#battery {
+    color: @mint;
+    min-width: 70px;
+    padding-left: 5px;
+    padding-right: 3px;
+}
+
+#battery.full {
+    color: @antiflash;
+}
+
+#battery.charging {
+    padding-right: 10px;
+    padding-left: 7px;
+}
+
+#battery.good {
+    color: @mint;
+}
+#battery.fair {
+    color: @tropical-indigo;
+}
+#battery.warning {
+    color: @sunglow;
+}
+#battery.critical {
+    color: @blush;
+}
+
+#custom-power {
+    padding: 0 15px 0 9px;
+    color: @cerise;
+}
+
+#custom-suspend,
+#custom-logout,
+#custom-reboot,
+#custom-shutdown {
+    color: black;
+    background: @cerise;
+    padding: 0 5px;
+    min-width: 25px;
+    margin: 0 2px;
+}
+
+/* Add these styles to your style.css to fix the overlapping issues */
+
+/* Fix for music control group */
+#custom-mpris_prev,
+#custom-mpris_plp,
+#custom-mpris_next {
+    background: black;
+    padding: 7px 8px;
+    margin: 0 1px;
+    min-width: 20px;
+}
+
+/* Ensure pulseaudio has proper styling */
+#pulseaudio {
+    background: black;
+    min-width: 50px;
+    padding: 7px 8px;
+    margin: 0 3px;
+    color: @celeste;
+}
+
+/* Fix group alignment */
+.group {
+    margin: 0;
+}
+
+/* Ensure music control group has proper spacing */
+#custom-mpris_prev {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+}
+
+#custom-mpris_plp {
+    border-radius: 0;
+    margin: 0;
+}
+
+#custom-mpris_next {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+/* Make mpris connect better with control buttons */
+#mpris {
+    margin-left: 0;
+    border-top-left-radius: 20;
+    border-bottom-left-radius: 20;
+}
