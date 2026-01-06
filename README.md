@@ -10,11 +10,6 @@
 - [Installation](#installation)
 
 ---
-## Screenshots
-![obsidian](/MyCode/Dots/assets/screenshots/2025-11-17-23-16-18_grim.png)
-![fastfetch](/MyCode/Dots/assets/screenshots/2025-11-17-23-34-03_grim.png)
-
----
 
 ## Specs 
 
@@ -64,5 +59,3 @@ Clone and run the install script:
 git clone https://github.com/S9npai/dotfiles.git
 cd ~/dotfiles/MyCode/Dots && ./install.sh
 ```
-
----
