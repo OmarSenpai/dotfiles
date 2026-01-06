@@ -26,7 +26,7 @@
 | Terminal        | kitty                                                        |
 | Panel / Bar     | waybar                                                       |
 | Launcher        | wofi                                                         |
-| Notifications   | dms + swaync                                                 |
+| Notifications   | noctalia-shell                                                |
 | File Manager    | nautilus                                                     |
 | Editor          | neovim (lazyvim) + zed (customized)                          |
 | Browser         | Brave                                                        |
@@ -66,7 +66,3 @@ cd ~/dotfiles/MyCode/Dots && ./install.sh
 ```
 
 ---
-
-**Special thanks to**:
-- Catppuccin team
-- DankMaterialShell
