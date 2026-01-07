@@ -4,7 +4,6 @@
 
 ---
 ## Table of Contents
-- [Screenshots](#screenshots)
 - [Specs](#specs)
 - [Software](#software)
 - [Installation](#installation)
