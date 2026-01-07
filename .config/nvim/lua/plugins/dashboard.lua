@@ -28,18 +28,29 @@ return {
 
 
         require('dashboard').setup({
+            -- critical: make theme outside config {}
+            theme = 'doom',
             config = {
-                theme = 'doom',
                 header = custom_header,
 
-                center = {
-                    { icon = "󰈞 ", desc = "Find File", action = "Telescope find_files", key = "f" },
-                    { icon = " ", desc = "New File", action = "ene | startinsert", key = "n" },
-                    { icon = " ", desc = "Recent Files", action = "Telescope oldfiles", key = "r" },
-                    { icon = " ", desc = "Config", action = "lua LazyVim.pick.config_files()()", key = "c" }, -- Example path from original file
-                    { icon = "󰒲 ", desc = "Lazy", action = "Lazy", key = "p" },
-                    { icon = "󰐥 ", desc = "Quit", action = "qa", key = "q" },
+                hide = {
+                    statusline = false,
+                    tabline = false,
+                    winbar = false,
                 },
+
+                center = {
+                    { icon = "󰈞 ", desc = "Find File                    ", action = "Telescope find_files", key = "f" },
+                    { icon = " ", desc = "New File                     ", action = "ene | startinsert", key = "n" },
+                    { icon = " ", desc = "Recent Files                 ", action = "Telescope oldfiles", key = "r" },
+                    --requires plugin: github.com/ahmedkhalf/project.nvim
+                    --{ icon = "󰆦 ", desc = "Projects                     ", action = "Telescope projects", key = "s" },
+                    { icon = "󰒲 ", desc = "Lazy                         ", action = "Lazy", key = "p" },
+                    { icon = "󱎥 ", desc = "Mason                        ", action = "Mason", key = "m" },
+                    { icon = "󰐥 ", desc = "Quit                         ", action = "qa", key = "q" },
+                },
+
+                footer = {}
             },
         })
     end
