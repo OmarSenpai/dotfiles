@@ -23,7 +23,7 @@
 | Launcher        | wofi                                                         |
 | Notifications   | noctalia-shell                                                |
 | File Manager    | nautilus                                                     |
-| Editor          | neovim (lazyvim) + zed (customized)                          |
+| Editor          | neovim (lazy.nvim) + zed (customized)                          |
 | Browser         | Brave                                                        |
 | Note-taking     | Obsidian                                                     |
 | GTK Theme       | Colloid-gtk                                                  |
