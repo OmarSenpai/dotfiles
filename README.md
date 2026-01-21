@@ -3,7 +3,7 @@
 *Full Fedora & Hyprland rice*
 
 ![Image 1](Code/Dots/assets/screenshots/2026-01-21-17-48-03_grim.png)
-![Image 2](Code/Dots/assests/screenshots/2026-01-21-17-50-46_grim.png)
+![Image 2](Code/Dots/assets/screenshots/2026-01-21-17-50-46_grim.png)
 
 
 ---
