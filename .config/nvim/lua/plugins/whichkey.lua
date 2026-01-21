@@ -8,8 +8,6 @@ return {
     end,
 
     opts = {
-        -- Basic setup options for which-key
-        -- This ensures it starts up correctly
     },
 
     keys = {
@@ -29,6 +27,7 @@ return {
         { '<leader>lr', vim.lsp.buf.references,           desc = 'Go to [R]eferences' },
         { '<leader>ln', vim.lsp.buf.rename,               desc = '[R]e[n]ame Symbol' },
         { '<leader>la', vim.lsp.buf.code_action,          desc = 'Code [A]ction' },
+        { '<leader>lf', vim.lsp.buf.format,       desc = '[F]ormat Buffer' },
 
         -- Group: Theme (t)
         { '<leader>t',  group = '[T]hemes' },

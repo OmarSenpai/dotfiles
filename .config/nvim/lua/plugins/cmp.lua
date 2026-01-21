@@ -31,10 +31,14 @@ return {
                 { name = "path",     priority = 250 },
             }),
 
-            -- Configure the appearance
+
             window = {
-                completion = cmp.config.window.bordered(),
-                documentation = cmp.config.window.bordered(),
+                completion = cmp.config.window.bordered({
+                    winhighlight = "Normal:CmpNormal,FloatBorder:CmpBorder,CursorLine:CmpCursorLine,Search:None",
+                }),
+                documentation = cmp.config.window.bordered({
+                    winhighlight = "Normal:CmpDocNormal,FloatBorder:CmpDocBorder,Search:None",
+                }),
             },
 
             -- Use lspkind to show icons

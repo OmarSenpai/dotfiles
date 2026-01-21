@@ -40,15 +40,15 @@ M.setup = function()
         Function = { fg = colors.yellow },
         Statement = { fg = colors.noct },
         Conditional = { fg = colors.lightblue },
-        Repeat = { fg = colors.light_purple },
+        Repeat = { fg = colors.Havelock_blue },
         Label = { fg = colors.noct },
         Operator = { fg = colors.fg0 },
         Keyword = { fg = colors.Amethyst },
         Exception = { fg = colors.arch },
-        PreProc = { fg = colors.noct },
+        PreProc = { fg = colors.seagull },
         Include = { fg = colors.lightblue },
         Define = { fg = colors.lightblue },
-        Macro = { fg = colors.noct },
+        Macro = { fg = colors.sky },
         PreCondit = { fg = colors.Amethyst },
         Type = { fg = colors.Turqoise },
         StorageClass = { fg = colors.light_purple },
@@ -74,7 +74,7 @@ M.setup = function()
         LspReferenceWrite = { bg = colors.bg3 },
 
         -- Treesitter
-        ["@keyowrd.define"] = { fg = colors.Amethyst },
+        ["@keyword.define"] = { fg = colors.arch },
         ["@variable"] = { fg = colors.fg1 },
         ["@variable.builtin"] = { fg = colors.lightblue },
         ["@function"] = { fg = colors.light_mint },
@@ -83,15 +83,15 @@ M.setup = function()
         ["@method"] = { fg = colors.yellow },
         ["@method.call"] = { fg = colors.yellow },
         ["@keyword"] = { fg = colors.lightblue },
-        ["@keyword.function"] = { fg = colors.Havelock_blue },
-        ["@keyword.operator"] = { fg = colors.noct },
+        ["@keyword.function"] = { fg = colors.arch },
+        ["@keyword.operator"] = { fg = colors.seagull },
         ["@keyword.return"] = { fg = colors.Turqoise },
         ["@keyword.import"] = { fg = colors.lightblue },
         ["@keyword.conditional"] = { fg = c.Turqoise },
         ["@keyword.repeat"] = { fg = c.Turqoise },
         ["@type"] = { fg = colors.fg0 },
         ["@type.builtin"] = { fg = colors.lightblue },
-        ["@namespace"] = { fg = colors.arch },
+        ["@namespace"] = { fg = colors.seagull },
         ["@parameter"] = { fg = colors.Havelock_blue },
         ["@property"] = { fg = colors.lightblue },
         ["@constant"] = { fg = colors.beige },
@@ -108,7 +108,7 @@ M.setup = function()
         ["@tag"] = { fg = colors.blue },
         ["@attribute"] = { fg = colors.lightblue },
         ["@type.qualifier"] = { fg = colors.light_purple }, -- auto, const
-        ["@storageclass"] = { fg = colors.noct },           -- int, float, etc.
+        ["@storageclass"] = { fg = colors.arch },           -- int, float, etc.
 
         -- Git signs
         GitSignsAdd = { fg = colors.git_add },
@@ -142,18 +142,30 @@ M.setup = function()
         NeoTreeSymbolicLinkTarget = { fg = c.cyan },
 
         -- Dashboard
-        DashboardHeader = { fg = c.Aquaforest },
+        DashboardHeader = { fg = c.arch },
         DashboardCenter = { fg = c.noct },
         DashboardFooter = { fg = c.fg_muted, italic = true },
         DashboardShortCut = { fg = c.Aquaforest },
 
-        -- CMP (Autocompletion)
-        CmpBorder = { fg = c.fg1, bg = c.fg1 },            -- Bright white border
-        CmpDocBorder = { fg = c.fg1, bg = c.fg1 },         -- Documentation border
-        CmpDocNormal = { fg = c.fg1, bg = c.bg2 },         -- Documentation text
-        CmpNormal = { fg = c.fg1, bg = c.fg1 },            -- Menu background
+        -- CMP (Autocompletion) - Main completion menu
+        CmpNormal = { fg = c.fg0, bg = c.gutter_bg },      -- Menu background (lighter than bg0)
+        CmpBorder = { fg = c.fg0, bg = c.bgfloat },        -- Border with matching bg
+        CmpCursorLine = { bg = c.pmenu_sel },              -- Selected item background
         CmpItemAbbrMatch = { fg = c.yellow, bold = true }, -- Matching text highlight
         CmpItemAbbrMatchFuzzy = { fg = c.yellow },         -- Fuzzy match
+        CmpItemKind = { fg = c.lightblue },                -- Icons/kind indicators
+        CmpItemMenu = { fg = c.fg3 },                      -- Source name [LSP], [Buffer], etc.
+
+        -- CMP Documentation window (darker than main menu for contrast)
+        CmpDocNormal = { fg = c.fg0, bg = c.bg1 },     -- Documentation text (darker bg)
+        CmpDocBorder = { fg = c.fg1, bg = c.bgfloat }, -- Documentation border (darker)
+
+        -- LSP Signature help (function signatures)
+        LspSignatureActiveParameter = { fg = c.yellow, bold = true },
+
+        -- LSP Hover documentation
+        -- These use NormalFloat and FloatBorder by default, but you can override:
+        LspInfoBorder = { fg = c.fg0, bg = c.bgfloat }, -- LSP info window border
     }
 end
 

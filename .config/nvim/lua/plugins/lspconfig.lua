@@ -3,8 +3,8 @@ return {
     "neovim/nvim-lspconfig",
 
     dependencies = {
-        "mason-org/mason.nvim",
-        "mason-org/mason-lspconfig.nvim",
+        "williamboman/mason.nvim", -- Fixed namespace to official williamboman
+        "williamboman/mason-lspconfig.nvim",
         "hrsh7th/cmp-nvim-lsp",
         "folke/neodev.nvim",
         "ray-x/lsp_signature.nvim",
@@ -38,6 +38,7 @@ return {
             },
 
             handlers = {
+                -- The default handler
                 function(server)
                     lspconfig[server].setup({
                         capabilities = capabilities,
@@ -57,8 +58,27 @@ return {
                         },
                     })
                 end,
-            },
+
+                ["gopls"] = function()
+                    lspconfig.gopls.setup({
+                        capabilities = capabilities,
+                        on_attach = on_attach,
+                        root_dir = function(fname)
+                            -- This allows gopls to work in your Katana-Shell project
+                            -- even without a go.mod file
+                            return lspconfig.util.root_pattern("go.mod", ".git")(fname) or vim.loop.cwd()
+                        end,
+                        settings = {
+                            gopls = {
+                                ["ui.completion.usePlaceholders"] = true,
+                                ["build.experimentalWorkspaceModule"] = true,
+                            },
+                        },
+                    })
+                end,
+            }
         })
+
 
         vim.api.nvim_create_autocmd("BufEnter", {
             callback = function(args)

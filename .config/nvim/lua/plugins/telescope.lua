@@ -2,7 +2,7 @@
 
 return {
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.8',              -- Pin to a stable release
+    branch = 'master',
     dependencies = {
         'nvim-lua/plenary.nvim' -- Required dependency for Telescope
     },

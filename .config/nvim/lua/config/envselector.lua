@@ -3,7 +3,7 @@ local M = {}
 
 M.venvs = {
     ['System Python -> /usr/bin/python3'] = '/usr/bin/python3',
-    ['Aux Python -> /usr/local/bin/python3.13'] = '/usr/local/bin/python3.13',
+    ['Dev. Python -> /usr/local/bin/python3.13'] = '/usr/local/bin/python3.13',
     ['Project Venv -> /.venv'] = vim.fn.getcwd() .. '/.venv',
     -- Add more venvs like this:
     -- ['My ML Env'] = vim.fn.expand('~/venvs/ml'),

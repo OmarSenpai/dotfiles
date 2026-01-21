@@ -5,6 +5,7 @@ return {
     bg2 = '#242327', -- Popup/float backgrounds
     bg3 = '#3e3e42', -- Selection background
     bg4 = '#4d4d50', -- Cursor line
+    bgfloat = '#322f3b',
 
     -- Foreground shades
     fg0 = '#d4d4d4', -- Main text
@@ -30,13 +31,14 @@ return {
     gray = "#757575",
     light_gray = "#bbbbbb",
     light_mint = "#63d69e",
-    beige = "#b5b874",
+    beige = "#cfcf86",
     arch = '#9d87ed',
     Turqoise = "#6ad6e4",
-    Seagull = "#7eb6e2",
+    seagull = "#7eb6e2",
     Azure = "#3962b8",
     Aquaforest = "#6cb899",
-    Cinnanmon = "#e05e17",
+    sky = '#4fc0c4',
+    cinnanmon = "#e05e17",
     Malachite = "#17e05a",
     Amethyst = "#d15fe2",
 

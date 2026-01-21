@@ -27,7 +27,7 @@ return {
         local custom_header = read_logo(logo_file_path)
 
         local padding = {}
-        for i = 1, 20 do -- Adjust number of lines
+        for i = 1, 20 do
             table.insert(padding, "")
         end
 
@@ -37,7 +37,7 @@ return {
         end
         custom_header = padding
 
-        -- Add spacing between logo and menu
+        -- spacing between logo and menu
         for i = 1, 3 do -- Change the number to add more/less spacing
             table.insert(custom_header, "")
         end

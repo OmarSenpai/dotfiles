@@ -20,9 +20,10 @@
 | Terminal        | kitty                                                        |
 | Panel / Bar     | waybar                                                       |
 | Launcher        | wofi                                                         |
-| Notifications   | noctalia-shell                                                |
+| Notifications   | noctalia-shell                                               |
+| DE Shell        | noctalia-shell                                               |
 | File Manager    | nautilus                                                     |
-| Editor          | neovim (lazy.nvim) + zed (customized)                          |
+| Editor          | neovim (lazy.nvim) + zed (customized)                        |
 | Browser         | Brave                                                        |
 | Note-taking     | Obsidian                                                     |
 | GTK Theme       | Colloid-gtk                                                  |
