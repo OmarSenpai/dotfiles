@@ -68,6 +68,6 @@
 Clone and run the install script:
 
 ```bash
-git clone https://github.com/S9npai/dotfiles.git
+git clone https://github.com/S9npai/Dotfiles.git
 cd ~/Dotfiles/Code/Dots && ./install.sh
 ```
