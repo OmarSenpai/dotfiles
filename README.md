@@ -2,6 +2,10 @@
 
 *Full Fedora & Hyprland rice*
 
+![Image 1](Code/Dots/assets/screenshots/2026-01-21-17-48-03_grim.png)
+![Image 2](Code/Dots/assests/screenshots/2026-01-21-17-50-46_grim.png)
+
+
 ---
 ## Table of Contents
 - [Specs](#specs)
@@ -49,6 +53,14 @@
 - `starship` prompt
 - `exa` + `bpytop`
 - `cava` (visualizer)
+
+
+> [!warning]
+> The repo is tailor-made for guiding Fedora users, if you're using another distro, make sure to check the packages are available for your distro and install them
+> 
+> Clone the repo locally on your system and explore the configs depending on what would you specifically need
+
+
 
 ---
 ## Installation

@@ -11,6 +11,7 @@ sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264 --allowerasing
 sudo dnf group install multimedia ffmpeg ffmpeg-devel --allowerasing
 
+# enable main source repos for hyprland and noctalia
 sudo dnf copr enable solopasha/hyprland
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 sudo dnf install hyprland wofi wlogout waybar-git cliphist waypaper grim slurp swaybg bpytop brightnessctl wireplumber tmux nvim fastfetch qt5ct qt6ct --allowerasing
