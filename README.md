@@ -57,5 +57,5 @@ Clone and run the install script:
 
 ```bash
 git clone https://github.com/S9npai/dotfiles.git
-cd ~/dotfiles/MyCode/Dots && ./install.sh
+cd ~/Dotfiles/Code/Dots && ./install.sh
 ```
