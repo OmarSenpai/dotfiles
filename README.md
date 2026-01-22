@@ -26,6 +26,7 @@
 | Launcher        | wofi                                                         |
 | Notifications   | noctalia-shell                                               |
 | DE Shell        | noctalia-shell                                               |
+| Screenshots     | grim + slurp (screenshot capture and selection utilities)    |
 | File Manager    | nautilus                                                     |
 | Editor          | neovim (lazy.nvim) + zed (customized)                        |
 | Browser         | Brave                                                        |
@@ -43,7 +44,7 @@
 - `waybar` (with custom modules)
 - `wofi`
 - `swaybg` (wallpaper daemon)
-- `DankMaterialShell` (aka dms )
+- `noctalia-shell`
 
 ### Theming & Looks
 - `qt5ct` + `qt6ct` (for Qt apps)
@@ -52,7 +53,6 @@
 ### Productivity & Ricing goodies
 - `starship` prompt
 - `exa` + `bpytop`
-- `cava` (visualizer)
 
 
 > [!warning]
