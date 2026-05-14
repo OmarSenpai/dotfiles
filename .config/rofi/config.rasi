@@ -1,0 +1,12 @@
+
+configuration {
+    modi: "drun,filebrowser,window,run";
+    show-icons: true;
+    display-drun: "";
+    display-run: "";
+    display-filebrowser: "";
+    display-window: "";
+    drun-display-format: "{name}";
+}
+
+@theme "my_style"

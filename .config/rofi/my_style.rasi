@@ -1,0 +1,187 @@
+/**
+ * ROFI Layout 
+ *
+ * Style 1: Background image with a sidebar list.
+ * Attribute: rofilaunch,launcher
+ * User: The HyDE Project [ Sideview ]
+ * Copyright: https://github.com/prasanthrangan/hyprdots/
+ */
+
+
+
+// Config //
+configuration {
+    modi:                        "drun,filebrowser,window,run";
+    show-icons:                  true;
+    display-drun:                "";
+    display-run:                 " ";
+    display-filebrowser:         " ";
+    display-window:              " ";
+    drun-display-format:         "{name}";
+    window-format:               "{w}{t}";
+    font:                        "JetBrainsMono Nerd Font 10";
+    icon-theme:                  "Tela-circle-dracula";
+}
+
+@theme "~/.config/rofi/theme.rasi"
+
+
+// Main //
+window {
+    height:                      500px;
+    width:                       900px;
+    transparency:                "real";
+    fullscreen:                  false;
+    enabled:                     true;
+    cursor:                      "default";
+    spacing:                     0px;
+    padding:                     0px;
+    border-color:                @main-br;
+    background-color:            transparent;
+}
+
+mainbox {
+    orientation:                 horizontal;
+    children:                    [ "dummywall", "listbox" ];
+    background-color:            @main-bg;
+    border-radius:               20px;
+}
+
+mode-switcher {
+    enabled:                     true;
+    orientation:                 vertical;
+    spacing:                     24px;
+    padding:                     70px 380px 100px 8px;
+    margin:                      120px 0px 0px 12px;
+    background-color:            transparent;
+    children:                    [ button ];
+    width:                       56px;
+}
+
+button {
+    width:                       52px;
+    height:                      52px;
+    expand:                      false;
+    padding:                     0px;
+    margin:                      0px;
+    border-radius:               999px;
+    horizontal-align:            0.5;
+    vertical-align:              0.5;
+    background-color:            rgba(255,255,255,0.18);
+    text-color:                  @main-fg;
+    cursor:                      pointer;
+}
+
+button selected {
+    background-color: rgba(255,255,255,0.85);
+    text-color: #1e1e2e;
+}
+
+dummywall {
+    spacing:                     0px;
+    padding:                     0px;
+    width:                       480px;
+    expand:                      false;
+    orientation:                 vertical;
+    children:                    [ "mode-switcher" , "inputbar" ];
+    background-color:            transparent;
+    background-image:            url("~/Pictures/Wallpapers/77711-Space-Planet-Black-HoleBlack-Hole-4k-Ultra-HD-Wallpaper.jpg", height);
+    border-radius:               20px 0px 0px 20px;
+}
+
+inputbar {
+    enabled:                     true;
+    children:                    [ "entry" ];
+    background-color:            @main-bg; /* Give it a solid color to see it */
+    margin:                      24px 80px 24px 80px; /* Centers it horizontally */
+    padding:                     12px 24px;
+    border-radius:               100%; /* Makes the search bar a pill shape */
+}
+
+entry {
+    enabled:                     true;
+    placeholder:                 "Search...";
+    placeholder-color:           @main-fg;
+    text-color:                  @main-fg;
+    background-color:            transparent; /* Ensure no white box here */
+}
+
+// Lists //
+listbox {
+    spacing:                     4px;
+    padding:                     4px;
+    children:                    [ "dummy" , "listview" , "dummy" ];
+    background-color:            transparent;
+    border-radius:               20px 20px 20px 20px;
+}
+
+listview {
+    enabled:                     true;
+    spacing:                     4px;
+    padding:                     4px;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    expand:                      false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+element {
+    enabled:                     true;
+    spacing:                     12px;
+    padding:                     12px 12px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @main-fg;
+    border-radius:               20px;
+}
+
+element selected.normal {
+    background-color:            @select-bg;
+    text-color:                  @select-fg;
+}
+
+element-icon {
+    size:                        32px;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+
+// Error message //
+error-message {
+    text-color:                  @main-fg;
+    background-color:            @main-bg;
+    text-transform:              capitalize;
+    children:                    [ "textbox" ];
+}
+
+textbox {
+    text-color:                  inherit;
+    background-color:            inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+
+
